@@ -16,9 +16,26 @@ function draw() {
   checkChangeScreen();
 }
 function checkChangeScreen(){
+  //this checks if we have gone off the screen to the right
   if(p.x + p.w > width){
     p.x = 0;
     whereTo("r");
+  }
+  
+  //this checks if we have gone off to the left.
+  if(p.x < 0){
+    p.x = width - p.w;
+    whereTo("l");
+  }
+  //this checks if we have gone off  the top.
+  if(p.y < 0){
+    p.y = height - p.h;
+    whereTo("u");
+  }
+  //this checks if we have gone off  the bottom.
+  if(p.y + p.h > height){
+    p.y =0;
+    whereTo("d");
   }
 }
 
