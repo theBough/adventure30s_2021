@@ -1,15 +1,19 @@
 let p;
 let w = [];
 let room = 1;
+let e;
 function setup() {
   createCanvas(400, 400);
-  p = new Player(200, 200, 10, 10, "red");
+  p = new Player(200, 200, 10, 10, "blue");
+  e = new Enemy(200,200,30,30,"red")
   roomOne();
 }
 function draw() {
   background(0);
   p.display();
   p.update();
+  e.display();
+  e.update();
   for (i = 0; i < w.length; i++) {
     w[i].display();
   } //end loop
