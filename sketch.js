@@ -44,10 +44,40 @@ function whereTo(whatDirection) {
   if (room == 1) {
     switch (whatDirection) {
       case "u":
+        roomThree();
+        break;
+      case "d":
+        
+        break;
+      case "l":
+        
+        break;
+      case "r":
+        roomTwo();
+        break;
+    } //end switch
+  } else if (room == 2) {
+    switch (whatDirection) {
+      case "u":
         
         break;
       case "d":
         
+        break;
+      case "l":
+        roomOne();
+        break;
+      case "r":
+       
+        break;
+    } //end switch
+  }else if (room == 3) {
+    switch (whatDirection) {
+      case "u":
+        
+        break;
+      case "d":
+        roomOne();
         break;
       case "l":
         
