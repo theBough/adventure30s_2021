@@ -9,6 +9,7 @@
   </head>
   <body>
     <script src="enemy.js"></script>
+    <script src="sword.js"></script>
     <script src="rooms.js"></script>
     <script src="player.js"></script>
     <script src="wall.js"></script>
