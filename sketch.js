@@ -2,10 +2,12 @@ let p;
 let w = [];
 let room = 1;
 let e;
+let s;
 function setup() {
   createCanvas(400, 400);
   p = new Player(200, 200, 10, 10, "blue");
-  e = new Enemy(200,200,30,30,"red")
+  e = new Enemy(200,200,30,30,"red");
+  s = new Sword(300,300,10,2);
   roomOne();
 }
 function draw() {
@@ -14,6 +16,7 @@ function draw() {
   p.update();
   e.display();
   e.update();
+  s.display();
   for (i = 0; i < w.length; i++) {
     w[i].display();
   } //end loop
